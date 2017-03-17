@@ -1,0 +1,100 @@
+h1 {
+  color: #369;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 250%;
+}
+.container {
+  border: solid #E6E7DF 1px;
+  -webkit-box-shadow: 1px 1px 5px #E6E7DF;
+  -moz-box-shadow: 1px 1px 5px #E6E7DF;
+  box-shadow: 1px 1px 5px #E6E7DF; }
+  .container .collapsiblePanel {
+    background: #C7C7A5;
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, #ECEAD1, #C7C7A5);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #ECEAD1, #C7C7A5);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #ECEAD1, #C7C7A5);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #ECEAD1, #C7C7A5);
+    /* Standard syntax (must be last) */
+    position: relative;
+    padding: 1px 20px; }
+    .container .collapsiblePanel H1 {
+      font-size: 14px; }
+      .container .collapsiblePanel H1 > SPAN {
+        color: #4C860E;
+        padding-right: 8px; }
+    .container .collapsiblePanel A.collapsibleButton {
+      position: absolute;
+      color: #4C860E;
+      right: 12px;
+      top: 10px; }
+  .container .example-appear {
+    opacity: 0.01; }
+  .container .example-appear.example-appear-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in; }
+  .container .accordion-content {
+    -webkit-transition: max-height 0.5s;
+    -moz-transition: max-height 0.5s;
+    -ms-transition: max-height 0.5s;
+    -o-transition: max-height 0.5s;
+    transition: max-height 0.5s;
+    overflow: hidden;
+    max-height: 1000px; }
+    .container .accordion-content.slide-up {
+      max-height: 0px; }
+  .container UL.sliders {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; }
+    .container UL.sliders LI {
+      display: none; }
+      .container UL.sliders LI.current {
+        display: block; }
+      .container UL.sliders LI .slider {
+        display: table;
+        border-top: solid #E6E7DF 1px;
+        border-bottom: solid #E6E7DF 1px;
+        padding: 10px; }
+        .container UL.sliders LI .slider > DIV {
+          vertical-align: middle; }
+        .container UL.sliders LI .slider .img {
+          width: 30%;
+          display: table-cell; }
+          .container UL.sliders LI .slider .img IMG {
+            width: 100%; }
+        .container UL.sliders LI .slider .description {
+          display: table-cell;
+          padding-left: 10px; }
+  .container .sliderNavigation {
+    display: table;
+    width: 100%; }
+    .container .sliderNavigation A {
+      color: #4C860E; }
+    .container .sliderNavigation > SPAN {
+      padding: 10px;
+      display: table-cell; }
+      .container .sliderNavigation > SPAN.next {
+        text-align: right;
+        position: relative;
+        padding-right: 20px; }
+        .container .sliderNavigation > SPAN.next > A {
+          padding-right: 8px; }
+        .container .sliderNavigation > SPAN.next > .fa {
+          font-size: 2em;
+          color: #4C860E;
+          position: absolute;
+          top: 4px; }
+      .container .sliderNavigation > SPAN.back {
+        position: relative;
+        padding-left: 20px; }
+        .container .sliderNavigation > SPAN.back > A {
+          padding-left: 20px; }
+        .container .sliderNavigation > SPAN.back > .fa {
+          font-size: 2em;
+          color: #4C860E;
+          position: absolute;
+          top: 4px; }
